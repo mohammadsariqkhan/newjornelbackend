@@ -18,7 +18,7 @@ export const EditorLogin = async (req, res) => {
 export const RegisterUser = async (req, res, next) => {
     try {
         const { username, email, password, role } = req.body;
-        if (!username || !email || !password) {
+        if (!username || !email || !password || !role) {
             return next(new ErrorHandler(400, "please enter a valid details"))
         }
         else {
