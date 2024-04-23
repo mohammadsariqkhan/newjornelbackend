@@ -17,12 +17,12 @@ export const uploadfile = async (req,res) => {
         const mailer = nodemailer.createTransport({
             service:'gmail',
             auth: {
-                user: "mohsariqkhan2004@gmail.com",
+                user: "rjsceditor@gmail.com",
                 pass: process.env.MAIL_PASS,
             },
         });
         const maildetail = {
-            from:'mohsariqkhan2004@gmail.com',
+            from:'rjsceditor@gmail.com',
             to:email,
             subject:'Mail for uploading file successfully',
             text:'Thank you for uploading your file on RJSC'

@@ -47,9 +47,9 @@ passport.use(new LocalStrategy({
         if (!passwordMatch) {
             return done(null, false, { message: 'Incorrect password.' });
         }
-        return done(null, user);
+        return done(null, user)
     } catch (error) {
-        return done(error.message);
+        return done(error.message)
     }
 }));
 
